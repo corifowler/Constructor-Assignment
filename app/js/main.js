@@ -9,7 +9,6 @@
 var Dog = function Dog(dogParams) {
 
   dogParams = dogParams !== undefined ? dogParams : {};
-  console.log(dogParams);
 
   this.color = dogParams.color;
   this.hungry = dogParams.hungry !== undefined ? dogParams.hungry : true;
@@ -22,8 +21,6 @@ var Dog = function Dog(dogParams) {
 var Human = function Human(humanParams) {
 
   humanParams = humanParams !== undefined ? humanParams : {};
-
-  console.log(humanParams);
 
   this.cool = humanParams.cool !== undefined ? humanParams.cool : false;
 
