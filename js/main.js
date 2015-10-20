@@ -1,10 +1,39 @@
 // Constructors
 // Only add code to *THIS* section!
 
-///
-///
-///
-///
+// Dog Constructor
+
+let Dog = function (dogParams) {
+
+  dogParams = (dogParams !== undefined) ? dogParams: {};
+  console.log(dogParams);
+
+  this.color = dogParams.color;
+  this.hungry = (dogParams.hungry !== undefined) ? dogParams.hungry : true;
+  this.owner = dogParams.owner;
+  this.status = 'normal';
+
+}
+
+// Human Constructor
+
+let Human = function (humanParams) {
+
+  humanParams = (humanParams !== undefined) ? humanParams: {};
+
+  console.log(humanParams);
+
+  this.cool = (humanParams.cool !== undefined) ? humanParams.cool : false;
+
+  this.pet = function(dog) {
+    dog.status = "happy";
+  }
+
+  this.feed = function(dog) {
+    dog.hungry = false;
+  }
+
+}
 
 // Do not ADD or MODIFY code below this line :)
 // Dogs
